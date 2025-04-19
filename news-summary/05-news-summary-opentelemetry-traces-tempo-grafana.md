@@ -87,7 +87,6 @@ services:
     image: grafana/tempo:latest
     ports:
       - "3200:3200"
-      - "4318:4317"
     volumes:
       - ./config/tempo/tempo.yaml:/etc/tempo.yaml
       - tempo_data: /tmp/tempo
